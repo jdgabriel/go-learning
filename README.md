@@ -92,3 +92,9 @@ require (
 	... // indirect
 )
 ```
+### <a name="install"></a> Tipos de estruturas e variáveis
+
+| Tipo  |  Padrão |~|Exemplo|
+|---|---|---|---|
+|  Declarative | `:=` | Criar uma variável e atribuir o retorno  | ```v1 := router.Group("/api/v1")``` |
+|  Pointer | `*` | Endereço do objeto em memória para ser usado em qualquer ponto do projeto  | ```*gin.Engine``` |
