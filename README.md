@@ -99,3 +99,7 @@ require (
 |---|---|---|---|
 |  Declarative | `:=` | Criar uma variável e atribuir o retorno  | ```v1 := router.Group("/api/v1")``` |
 |  Pointer | `*` | Endereço do objeto em memória para ser usado em qualquer ponto do projeto  | ```*gin.Engine``` |
+|  Struct | `struct` | Equivalente a um `objeto` | ```type Product struct {...}``` |
+|  Address | `&` | Indicação de endereço de uma struct criada | ```return &Logger {...}``` |
+|  Func Args | `...interface{}` | Representa "array" de argumentos da função. Com interface fazia ou definida | ```func (log *Logger) Info(v ...interface{}) {}``` |
+
