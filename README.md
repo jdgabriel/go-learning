@@ -9,6 +9,7 @@
 - [3. Convenções](#conventions)
   - [3.1. Métodos públicos e privados do pacote](#conventions_methods)
   - [3.2. Importando pacotes](#conventions_imports)
+- [4. Tipos de estruturas e variáveis](#struct)
 
 
 ## <a name="download_install"></a> Download & Instalação
@@ -92,7 +93,7 @@ require (
 	... // indirect
 )
 ```
-### <a name="install"></a> Tipos de estruturas e variáveis
+### <a name="struct"></a> Tipos de estruturas e variáveis
 
 | Tipo  |  Padrão |~|Exemplo|
 |---|---|---|---|
