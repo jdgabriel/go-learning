@@ -8,6 +8,7 @@
   - [2.1. Iniciando o módulo principal](#start_init)
 - [3. Convenções](#conventions)
   - [3.1. Métodos públicos e privados do pacote](#conventions_methods)
+  - [3.2. Importando pacotes](#conventions_imports)
 
 
 ## <a name="download_install"></a> Download & Instalação
@@ -61,3 +62,33 @@ package NOME_DO_MODULO
 |---|---|---|
 |  Primeira letra maiúscula | PUBLICA  | ```func Initialize(){ //... }```|
 |  Primeira letra minúscula | PRIVADA  | ```func initialize(){ //... }``` |
+
+### <a name="conventions_imports"></a> Importando pacotes
+Para importar um pacote temos duas maneiras, a direta e a indireta
+#### Método direto
+```bash
+go get -u github.com/gin-gonic/gin
+```
+#### Método indireto
+Importar dentro do arquivo que vai usar o módulo
+```bash
+import "github.com/gin-gonic/gin"
+```
+Assim temos que executar o seguinte comando. Este comando faz o download de todos os pacotes relacionados diretamente e indiretamente com seu projeto, e pacotes existentes.
+```bash
+go mod tidy
+```
+Após o comando será criado um arquivo, o `go.sum` onde temos o lock de todas as versões dos pacotes instalados no projeto.<br>
+Agora o o `go.mod` terá dois `require`
+```go
+module github.com/jdgabriel/go-learning
+
+go 1.22.4
+
+// direct
+require github.com/gin-gonic/gin v1.10.0
+
+require (
+	... // indirect
+)
+```
