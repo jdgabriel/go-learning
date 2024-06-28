@@ -11,7 +11,8 @@
   - [3.1. Métodos públicos e privados do pacote](#conventions_methods)
   - [3.2. Importando pacotes](#conventions_imports)
 - [4. Tipos de estruturas e variáveis](#struct)
-- [5. Documentação com Swagger](#docs)
+- [5. Makefile](#make)
+- [6. Documentação com Swagger](#docs)
 
 ## <a name="download_install"></a> Download & Instalação
 
@@ -134,9 +135,9 @@ require (
 | Address     | `&`                               | Indicação de endereço de uma struct criada                                                    | `return &Logger {...}`                         |
 | Func Args   | `...interface{}` OU `interface{}` | Representa a interface ou um "array" de argumentos da função. Com interface fazia ou definida | `func (log *Logger) Info(v ...interface{}) {}` |
 
-### <a name="docs"></a> Makefile
+### <a name="make"></a> Makefile
 
-#### <a name="docs_swagger"></a> Scripts para rodar o projeto
+#### <a name="make_script"></a> Scripts para rodar o projeto
 
 Rode qualquer comando com `make <COMANDO>`
 
