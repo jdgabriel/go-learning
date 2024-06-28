@@ -1,7 +1,7 @@
 
 @url = http://localhost:8080/api/v1
 
-GET {{url}}/openings
+GET {{url}}/opening
 Content-Type: application/json
 
 ###
@@ -13,6 +13,15 @@ Content-Type: application/json
   "company": "Tech Innovators Inc.",
   "location": "San Francisco, CA",
   "isRemote": true,
-  "link": "https://www.techinnovators.com/jobs/software-engineer",
+  "link": "www.jobs.com/software-engineer",
   "salary": 120000
 }
+
+###
+
+GET {{url}}/opening/1
+Content-Type: application/json
+
+###
+DELETE  {{url}}/opening/1
+Content-Type: application/json
