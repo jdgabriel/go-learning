@@ -8,6 +8,6 @@ import (
 
 func GetOpeningHandler(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H{
-		"message": "Hello World",
+		"message": "Hello World 2",
 	})
 }
