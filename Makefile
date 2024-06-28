@@ -23,5 +23,5 @@ docs:
 	@swag init
 
 clean:
-	@rm -f $(APP_NAME)
+	@rm -f cmd/$(APP_NAME)
 	@rm -rf ./docs
